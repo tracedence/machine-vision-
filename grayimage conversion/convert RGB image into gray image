@@ -1,0 +1,11 @@
+from skimage import io, viewer
+
+img = io.imread('cat.jfif', as_grey = True)
+
+#print the dimension of image
+print(img.shape)
+
+#convert pixel in decimal
+print(img[:5,:5] * 255)
+
+viewer.ImageViewer(img).show()
